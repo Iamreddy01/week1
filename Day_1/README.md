@@ -54,7 +54,7 @@ gtkwave tb_good_mux.vcd
 
 ```
 Above commands flow lets you compile, run, and view the waveforms.
-[Here is my output.](week1/Day_1/gtkwavemux.png )
+*[Here is my output.](week1/Day_1/gtkwavemux.png )
 
 
 #### step 4. Verilog Code Analysis
