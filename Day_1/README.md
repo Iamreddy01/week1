@@ -57,7 +57,7 @@ Above commands flow lets you compile, run, and view the waveforms.
 * ![Here is my output.](gtkwavemux.png)
 
 
-#### step 4. Verilog Code Analysis
+#### step 4: Verilog Code Analysis
 Here’s the Verilog code for the 2-to-1 multiplexer (good_mux_v.v), which we designed for this lab.
 * 2 to 1 Multiplexer
 ```bash
@@ -70,7 +70,7 @@ Here’s the Verilog code for the 2-to-1 multiplexer (good_mux_v.v), which we de
     assign y = s ? a : b;
 endmodule
 ```
-#### step 5. Technology Mapping
+#### step 5: Technology Mapping
 After our simulation passed, we learned about synthesis. Synthesis is the process of converting your RTL code into a gate-level netlist using a specific cell library.
 
 **Yosys** is an open-source synthesis tool that we'll be using. It's a fantastic tool that translates your Verilog code into a series of logical gates.
