@@ -15,7 +15,8 @@ Welcome to Day 1! Today, we took our first steps into the world of digital desig
 **Iverilog** is a powerful, open-source Verilog simulator. This is how a typical simulation flow looks:
 * First, we use **iverilog** to compile the design and testbench files into an executable.
 * Next, we run the executable with the **vvp** command to simulate the circuit and generate a waveform file (`.vcd`).
-* Finally, we use a waveform viewer like **gtkwave** to visualize the simulation results. It’s super helpful for debugging! !(https://i.imgur.com/your-image-link-here.jpg)
+* Finally, we use a waveform viewer like **gtkwave** to visualize the simulation results.
+* (iamreddy01/week1/Day_1/gtkwave mux.png)
 
 ---
 
@@ -101,7 +102,7 @@ Visualize the gate-level netlist
 show
 ```
 After running the synthesis flow, we can visualize the resulting gate-level netlist. 
-* !(https://www.google.com/url?sa=E&source=gmail&q=https://i.imgur.com/your-image-link-here.jpg) 
+* (iamreddy01/week1/Day_1/netlist output.png) 
 * **This diagram shows how the logic from our Verilog code is mapped to physical gates.**
 * **It's an important step to understand how our high-level design translates into actual hardware.**
 
