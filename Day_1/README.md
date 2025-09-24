@@ -103,11 +103,12 @@ show
 ```
 After running the synthesis flow, we can visualize the resulting gate-level netlist. 
 * ![This is my output](netlistoutput.png)
+  
 * **This diagram shows how the logic from our Verilog code is mapped to physical gates.**
 * **It's an important step to understand how our high-level design translates into actual hardware.**
 
 That's a wrap on our first day! 
-*We've successfully designed, simulated, and synthesized a simple circuit. ✅
+* We've successfully designed, simulated, and synthesized a simple circuit. ✅
 
 
 
