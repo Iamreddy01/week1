@@ -54,7 +54,7 @@ gtkwave tb_good_mux.vcd
 
 ```
 Above commands flow lets you compile, run, and view the waveforms.
-[Here is my output.]( )
+[Here is my output.](week1/Day_1/gtkwavemux.png )
 
 
 #### step 4. Verilog Code Analysis
@@ -102,7 +102,7 @@ Visualize the gate-level netlist
 show
 ```
 After running the synthesis flow, we can visualize the resulting gate-level netlist. 
-* (iamreddy01/week1/Day_1/netlist output.png) 
+* [This is my output](Week1/Day_1/netlistoutput.png)
 * **This diagram shows how the logic from our Verilog code is mapped to physical gates.**
 * **It's an important step to understand how our high-level design translates into actual hardware.**
 
