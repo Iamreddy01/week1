@@ -97,4 +97,50 @@ endmodule
 ```
 #### Synchronous reset: Takes effect only on the clock edge.
 
+### * simulation and Synthesis Workflow
+#### Icarus Verilog Simulation
+Compile:
+```bash
+iverilog dff_asyncres.v tb_dff_asyncres.v
+```
+Run:
+```bash
+./a.out
+```
+View Waveform:
+```bash
+gtkwave tb_dff_asyncres.vcd
+```
+### * Synthesis with Yosys
+#### Start Yosys:
+```bash
+yosys
+```
+####  Read Liberty library:
+```bash
+read_liberty -lib /address/to/your/sky130/file/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+#### Read Verilog code:
+```bash
+read_verilog /path/to/dff_asyncres.v
+```
+#### Synthesize:
+```bash
+synth -top dff_asyncres
+```
+#### Map flip-flops:
+```bash
+dfflibmap -liberty /address/to/your/sky130/file/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+#### Technology mapping:
+```bash
+abc -liberty /address/to/your/sky130/file/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+#### Visualize the gate-level netlist:
+```bash
+show
+```
+# image
 
+## Summary
+This overview provides you with practical insights into timing libraries, synthesis strategies, and reliable coding practices for flip-flops. Continue experimenting with these concepts to deepen your understanding of RTL design and synthesis.
