@@ -58,6 +58,43 @@ Retains the module hierarchy as defined in RTL, synthesizing modules separately.
 * Loss of hierarchy complicates debugging and reporting.
 * Can increase memory usage and netlist complexity.
 # example image
-   
+
+## Flip-Flop Coding Styles
+#### * Flip-flops are fundamental sequential elements in digital design, used to store binary data. Below are efficient coding styles for different reset/set behaviors.
+
+* Asynchronous Reset D Flip-Flop
+```bash
+module dff_asyncres (input clk, input async_reset, input d, output reg q);
+  always @ (posedge clk, posedge async_reset)
+    if (async_reset)
+      q <= 1'b0;
+    else
+      q <= d;
+endmodule
+```
+#### Asynchronous reset: Overrides clock, setting q to 0 immediately.
+#### Edge-triggered: Captures d on rising clock edge if reset is low.
+* Asynchronous Set D Flip-Flop
+```bash
+module dff_async_set (input clk, input async_set, input d, output reg q);
+  always @ (posedge clk, posedge async_set)
+    if (async_set)
+      q <= 1'b1;
+    else
+      q <= d;
+endmodule
+```
+#### Asynchronous set: Overrides clock, setting q to 1 immediately.
+* Synchronous Reset D Flip-Flop
+```bash
+module dff_syncres (input clk, input async_reset, input sync_reset, input d, output reg q);
+  always @ (posedge clk)
+    if (sync_reset)
+      q <= 1'b0;
+    else
+      q <= d;
+endmodule
+```
+#### Synchronous reset: Takes effect only on the clock edge.
 
 
