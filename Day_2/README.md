@@ -26,7 +26,7 @@ This naming convention clarifies which process, voltage, and temperature conditi
    ```bash
    gvim sky130_fd_sc_hd__tt_025C_1v80.lib
    ```
-   # image
+   ![here is the lib file ](libfile.png)
 
 ## Hierarchical vs. Flattened Synthesis
 ### Hierarchical Synthesis
@@ -43,7 +43,7 @@ Retains the module hierarchy as defined in RTL, synthesizing modules separately.
 * Cross-module optimizations are limited.
 * Reporting can require additional configuration.
 
-  # image
+  ![Example](hirarchical.png)
 
 ## Flattened Synthesis
 ### Definition: Merges all modules into a single flat netlist, eliminating hierarchy.
@@ -57,7 +57,7 @@ Retains the module hierarchy as defined in RTL, synthesizing modules separately.
 * Longer runtime for large designs.
 * Loss of hierarchy complicates debugging and reporting.
 * Can increase memory usage and netlist complexity.
-# example image
+ ![Example](flattened.png)
 
 ## Flip-Flop Coding Styles
 #### * Flip-flops are fundamental sequential elements in digital design, used to store binary data. Below are efficient coding styles for different reset/set behaviors.
@@ -111,6 +111,7 @@ View Waveform:
 ```bash
 gtkwave tb_dff_asyncres.vcd
 ```
+![Here gtk wave output](dffgtkwave.png)
 ### * Synthesis with Yosys
 #### Start Yosys:
 ```bash
@@ -140,7 +141,7 @@ abc -liberty /address/to/your/sky130/file/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```bash
 show
 ```
-# image
+![Here my netlist ](dffnetlist.png)
 
 ## Summary
 This overview provides you with practical insights into timing libraries, synthesis strategies, and reliable coding practices for flip-flops. Continue experimenting with these concepts to deepen your understanding of RTL design and synthesis.
