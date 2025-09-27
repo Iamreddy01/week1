@@ -102,6 +102,8 @@ always @(*) begin
 end
 endmodule
 ```
+![](incompcasea.png)
+
 
 
 
