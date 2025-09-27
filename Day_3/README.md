@@ -62,7 +62,7 @@ Follow the steps from Day 1 Synthesis Lab and add the following between abc -lib
 
 opt_clean -purge
 
-Lab 1 Output
+![](opt1.png)
 
 ### Lab 2
 Verilog code:
@@ -77,7 +77,7 @@ endmodule
     * **y = 1 if a is true.**
     * **y = b if a is false.**
 
-Lab 2 Output
+![](opt2.png)
 
 ### Lab 3
 Verilog code:
@@ -89,7 +89,7 @@ endmodule
 ### Functionality:
 2-to-1 multiplexer; y = a ? 1 : b (outputs 1 when a is true, otherwise b).
 
-Lab 3 Output
+![](opt3.png)
 
 ### Lab 4
 Verilog code:
@@ -106,7 +106,7 @@ module opt_check4 (input a , input b , input c , output y);
     * **If a = 0, y = !c.**
 * **Logic simplifies to:**
     * **y = a ? c : !c**
-Lab 4 Output
+![](opt4.png)
 
 ### Lab 5
 Verilog code:
@@ -126,7 +126,7 @@ endmodule
 * **D flip-flop with:**
     * **Asynchronous reset to 0**
     * **Loads constant 1 when not in reset**
-Lab 5 Output
+![](dff_const1.png)
 
 ### Lab 6
 Verilog code:
@@ -144,7 +144,7 @@ endmodule
 ### Functionality:
 
 * **D flip-flop always sets output q to 1 (regardless of reset or clock).**
-Lab 6 Output
+![](dff_const2.png)
 
 ### Summary
 * **Focus: Optimization techniques for combinational and sequential circuits in digital design, with practical Verilog labs.**
@@ -154,5 +154,7 @@ Lab 6 Output
   i.**Constant Propagation:** Replacing variables with constant values to simplify logic and improve circuit efficiency.
   ii.**State Optimization:** Reducing states and optimizing encoding in finite state machines to use less logic and power.
   iii.**Cloning:** Duplicating logic cells/modules to improve timing and balance load.
-  iv.**Retiming:** Repositioning registers in a circuit to enhance performance without altering its function.
-**Labs: Six practical Verilog labs illustrate these concepts, including examples of combinational logic optimizations and D flip-flop behaviors, each with code snippets and output images.**
+   
+  iv. **Retiming:** Repositioning registers in a circuit to enhance performance without altering its function.
+  
+  **Labs: Six practical Verilog labs illustrate these concepts, including examples of combinational logic optimizations and D flip-flop behaviors, each with code snippets and output images.**
