@@ -70,7 +70,7 @@ endmodule
 in_comp_if
 
 ### Lab 2: Synthesis Result of Lab 1
-incomp_synth
+![](incompif1.png)
 
 ### Lab 3: Nested If-Else
 ```bash
@@ -86,7 +86,7 @@ endmodule
 icomp2
 
 ### Lab 4: Synthesis Result of Lab 3
-incomp2synth
+![](incompif2.png)
 
 ### Lab 5: Complete Case Statement
 ```bash
@@ -103,7 +103,8 @@ endmodule
 compcase
 
 ### Lab 6: Synthesis Result of Lab 5
-compcase_synth
+![](compcase.png)
+
 
 ### Lab 7: Incomplete Case Handling
 ```bash
@@ -146,7 +147,7 @@ always @(*) begin
 end
 endmodule
 ```
-Screenshot_2025-05-28_12-39-30
+image 
 
 ### Note: Steps to perform the above labs are shown in Day 1.
 
