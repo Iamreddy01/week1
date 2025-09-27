@@ -67,7 +67,8 @@ always @(*) begin
 end
 endmodule
 ```
-in_comp_if
+![](lab1w5.png)
+
 
 ### Lab 2: Synthesis Result of Lab 1
 ![](incompif1.png)
@@ -83,7 +84,8 @@ always @(*) begin
 end
 endmodule
 ```
-icomp2
+![](lab2w5.png)
+
 
 ### Lab 4: Synthesis Result of Lab 3
 ![](incompif2.png)
@@ -100,7 +102,8 @@ always @(*) begin
 end
 endmodule
 ```
-compcase
+![](lab5w5.png)
+
 
 ### Lab 6: Synthesis Result of Lab 5
 ![](compcase.png)
