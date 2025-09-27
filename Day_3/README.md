@@ -146,6 +146,10 @@ endmodule
 * **D flip-flop always sets output q to 1 (regardless of reset or clock).**
 ![](dff_const2.png)
 
+* ### similarly for dff_const3 , i got the correct netlist.
+![](dff_const3.png)
+
+
 ### Summary
 * **Focus: Optimization techniques for combinational and sequential circuits in digital design, with practical Verilog labs.**
 
