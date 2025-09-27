@@ -59,13 +59,13 @@ module ternary_operator_mux (input i0, input i1, input sel, output y);
 endmodule
 ```
 * **Function:** y = i1 if sel = 1; else y = i0.
-lab1
+![](lab1.png)
 
 ### Lab 2: Synthesis Using Yosys
 Synthesize the above MUX using Yosys.
 Follow the standard Yosys synthesis flow.
 
-lab2
+![](lab2.png)
 
 ### Lab 3: Gate-Level Simulation (GLS) of MUX
 Run GLS for the synthesized MUX.
@@ -73,7 +73,7 @@ Use this command (adjust paths as needed):
 ```bash
 iverilog /path/to/primitives.v /path/to/sky130_fd_sc_hd.v ternary_operator_mux.v testbench.v
 ```
-lab3
+![](lab3.png)
 
 ### Lab 4: Bad MUX Example (Common Pitfalls)
 Verilog code with intentional issues:
@@ -99,13 +99,13 @@ always @ (*) begin
     y = i0;
 end
 ```
-lab4
+![](lab4.png)
 
 ### Lab 5: GLS of Bad MUX
 Perform GLS on the bad_mux.
 Expect simulation mismatches or warnings due to above issues.
 
-lab5
+![](lab5.png)
 
 ### Lab 6: Blocking Assignment Caveat
 Verilog code:
@@ -128,12 +128,12 @@ always @ (*) begin
   d = x & c;
 end
 ```
-lab6
+
 
 ### Lab 7: Synthesis of the Blocking Caveat Module
 Synthesize the corrected version of the module and observe the results.
 
-lab7
+![](lab7.png)
 
 ### 5. Summary
 * **Gate-Level Simulation (GLS):** Validates netlist functionality, timing, and testability after synthesis.
