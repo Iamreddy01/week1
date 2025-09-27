@@ -102,7 +102,7 @@ always @(*) begin
 end
 endmodule
 ```
-![](lab5w5.png)
+
 
 
 ### Lab 6: Synthesis Result of Lab 5
@@ -126,7 +126,7 @@ always @(*) begin
 end
 endmodule
 ```
-badcase
+![](lab5w5.png)
 
 ### Lab 8: Partial Assignments in Case
 ```bash
